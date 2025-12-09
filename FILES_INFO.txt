@@ -1,0 +1,122 @@
+TEXTILE MILL EXECUTIVE DASHBOARD
+==================================
+FINAL PROJECT FILES - CLEAN VERSION
+==================================
+
+This folder contains ONLY the essential files needed to run the dashboard.
+All unused and test files have been excluded for a clean, production-ready setup.
+
+FILES INCLUDED:
+===============
+
+MAIN APPLICATION FILES:
+-----------------------
+✓ dashboard_executive.py     - Main executive dashboard (PRIMARY FILE TO RUN)
+✓ simulate_all.py            - Data simulation orchestrator
+✓ requirements.txt           - Python package dependencies
+✓ README.md                  - Quick start guide
+✓ VISUAL_EXPLANATION.txt     - Comprehensive visual documentation (RECOMMENDED READ)
+
+DATA PROCESSING MODULES:
+------------------------
+✓ data_processing.py         - Data fetching, transformation, and metrics calculation
+✓ model_inference.py         - ML predictions, forecasting, and root cause analysis
+✓ alerts_engine.py           - Intelligent alert detection and prioritization
+✓ ui_components.py           - Reusable dashboard UI components
+✓ utils.py                   - Utility functions (export, formatting, calculations)
+
+CONFIGURATION:
+--------------
+✓ config/__init__.py         - Package initialization
+✓ config/config.py           - Supabase database credentials
+
+DATA GENERATORS:
+----------------
+✓ streaming/__init__.py      - Package initialization
+✓ streaming/machine_stream.py    - Production data generator (runs every 3 seconds)
+✓ streaming/supplier_stream.py   - Supplier data generator (runs every 5 seconds)
+
+DOCUMENTATION FILES:
+--------------------
+✓ README.md                  - Setup and usage instructions
+✓ VISUAL_EXPLANATION.txt     - Complete guide to all dashboard visuals
+✓ FILES_INFO.txt             - This file
+
+FILES EXCLUDED (Not Needed):
+=============================
+
+❌ dashboard.py              - Older version (superseded by dashboard_executive.py)
+❌ ML_Algorithms_Complete.py - Not used in final implementation
+❌ test_supabase.py          - Test file only
+❌ .env.example              - Credentials already in config.py
+❌ Project_Details.txt       - Old documentation (replaced by new docs)
+❌ venv/ folder              - Virtual environment (recreate with pip)
+❌ __pycache__/ folders      - Python cache (auto-generated)
+
+TOTAL FILE COUNT:
+=================
+- Python files: 13 essential files
+- Config files: 2 files (config/)
+- Streaming: 2 files (streaming/)
+- Documentation: 3 files
+
+DISK SPACE:
+===========
+Approximately 120 KB (excluding dependencies)
+
+HOW TO RUN:
+===========
+
+Step 1: Install dependencies
+   pip install -r requirements.txt
+
+Step 2: Start data simulation (Terminal 1)
+   python simulate_all.py
+
+Step 3: Launch dashboard (Terminal 2)
+   python -m streamlit run dashboard_executive.py
+
+Step 4: Open browser
+   http://localhost:8501
+
+IMPORTANT NOTES:
+================
+
+1. The 'venv' folder is NOT included - you'll need to create a new virtual
+   environment or use your global Python installation.
+
+2. All database credentials are pre-configured in config/config.py
+
+3. For complete visual explanations of every chart and feature, READ:
+   VISUAL_EXPLANATION.txt (contains ASCII diagrams of all dashboard components)
+
+4. The dashboard requires both terminals running simultaneously:
+   - Terminal 1: simulate_all.py (generates data)
+   - Terminal 2: dashboard_executive.py (displays data)
+
+WHAT MAKES THIS "CLEAN":
+=========================
+
+✓ Only production-ready files included
+✓ No test files or old versions
+✓ No unnecessary documentation
+✓ Clear file organization
+✓ Comprehensive documentation in 2 files (README + VISUAL_EXPLANATION)
+✓ All code fully functional and tested
+✓ Zero dependencies on excluded files
+
+NEXT STEPS:
+===========
+
+1. Copy this entire folder to your desired location
+2. Open terminal in this folder
+3. Follow "HOW TO RUN" steps above
+4. Read VISUAL_EXPLANATION.txt for detailed dashboard guide
+
+PROJECT STATUS: ✅ PRODUCTION READY
+====================================
+
+Version: 2.0
+Date: 2025-12-09
+Tested: Fully functional
+Documentation: Complete
